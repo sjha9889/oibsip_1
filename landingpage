@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<section> 
+    <div class="circle"> </div>
+    <header> 
+        <a href="https://www.freepnglogos.com/pics/starbucks-logo-png" class="logo2" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/starbucks-logo-png-transparent-0.png" width="80" alt="Starbucks Logo PNG Transparent" /></a>
+        
+        <ul>
+            <li> 
+                <a href="#"> Home </a>
+            </li>
+            <li>
+                <a href="#"> menu </a>
+            </li>
+            <li>
+                <a href="#"> what's new </a>
+            </li>
+            <li>
+                <a href="#"> contact </a>
+            </li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textbox">
+            <h1>It's not just coffee <br>  It's <span> Satrbucks</span></h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autem quis nam similique. Dignissimos minus tempora ullam ab eum voluptate reiciendis voluptatem ad quo. Provident temporibus atque tenetur doloremque quibusdam.</p>
+        <a href="#">Learn more</a>
+        </div>
+        <div class="imgbox">
+            <img src="img1.png" class="starbuck">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li> <img src="thumb1.jpg" width="80"> </li>
+        <li> <img src="thum2.jpg" width="80"> </li>
+        <li> <img src="img1.png" width="80"> </li>
+    </ul>
+</section>    
+<style> 
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+} 
+section{
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #fff;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex; 
+    width: 100%;
+    padding: 20px 100px;
+    justify-content:space-between;
+    align-items: center;
+}
+header .logo2{
+    position:relative;
+    max-width: 40px;
+   
+}
+header ul
+
+{
+    position:relative; 
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left:40px; 
+    text-decoration: none;
+}
+.content{
+    position:relative; 
+    width:100%; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center ;
+}
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textbox h1{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight:500;
+}
+.content .textbox h1 span {
+    color:#017143; 
+    font-size: 1.2 em;
+    font-weight: 900;
+}
+.content .textbox p {
+    color: #333;
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top :20px;
+    padding:10px 30px; 
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgbox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 10px;
+}
+.content .imgbox img{
+    max-width: 400px;
+}
+.thumb{
+    position:absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+</style>
+</body>
+</html>
